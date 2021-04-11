@@ -1,0 +1,1053 @@
+EESchema Schematic File Version 4
+LIBS:instru_bab_v2-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R403
+U 1 1 5992E43B
+P 10000 4450
+F 0 "R403" V 10080 4450 50  0000 C CNN
+F 1 "4k7" V 10000 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9930 4450 50  0001 C CNN
+F 3 "" H 10000 4450 50  0001 C CNN
+	1    10000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L instru_bab_v2-rescue:BAT54A D403
+U 1 1 5992E4B3
+P 3750 3500
+F 0 "D403" H 3750 3600 50  0000 C CNN
+F 1 "BAT54A" H 3750 3250 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3750 3500 50  0001 C CNN
+F 3 "" H 3750 3500 50  0000 C CNN
+	1    3750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R405
+U 1 1 5992E569
+P 4600 3250
+F 0 "R405" V 4680 3250 50  0000 C CNN
+F 1 "10k" V 4600 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4530 3250 50  0001 C CNN
+F 3 "" H 4600 3250 50  0001 C CNN
+	1    4600 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3400 4600 3500
+Connection ~ 4600 3500
+Wire Wire Line
+	4600 2450 4600 3000
+$Comp
+L Device:CP C401
+U 1 1 5992EAC6
+P 10400 4950
+F 0 "C401" H 10425 5050 50  0000 L CNN
+F 1 "10u" H 10425 4850 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_4x4.5" H 10438 4800 50  0001 C CNN
+F 3 "" H 10400 4950 50  0001 C CNN
+	1    10400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4600 10000 4700
+Wire Wire Line
+	9700 4700 10000 4700
+Connection ~ 10000 4700
+Text Label 10000 5500 3    60   ~ 0
+GND_SIGNAL
+Text Label 10400 5200 3    60   ~ 0
+GND_SIGNAL
+Wire Wire Line
+	10000 5400 10000 5900
+Wire Wire Line
+	10400 5100 10400 5800
+Wire Wire Line
+	10000 3700 10000 4300
+Text HLabel 1250 7050 0    60   Input ~ 0
+VCC_SIGNAL
+Text HLabel 1250 7250 0    60   Input ~ 0
+VCC_POWER
+Text HLabel 1250 7450 0    60   Input ~ 0
+GND_SIGNAL
+Text HLabel 1250 7650 0    60   Input ~ 0
+GND_POWER
+Text HLabel 3300 3500 0    60   Input ~ 0
+PWM_IN
+NoConn ~ 3600 3650
+Wire Wire Line
+	3300 3500 3600 3500
+Text Label 1350 7450 0    60   ~ 0
+GND_SIGNAL
+Text Label 1350 7650 0    60   ~ 0
+GND_POWER
+Wire Wire Line
+	1250 7450 1950 7450
+Wire Wire Line
+	1250 7650 1950 7650
+Text Label 10000 4250 1    60   ~ 0
+VCC_SIGNAL
+Text Label 3200 800  2    60   ~ 0
+VCC_POWER
+Wire Wire Line
+	10400 4700 10400 4800
+Connection ~ 10400 4700
+Text Label 10500 4700 0    60   ~ 0
+VCC_DIG
+Text Label 4600 3000 1    60   ~ 0
+VCC_DIG
+$Comp
+L Device:CP C406
+U 1 1 5993072B
+P 6800 1050
+F 0 "C406" H 6825 1150 50  0000 L CNN
+F 1 "220u 35V" H 6825 950 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x10" H 6838 900 50  0001 C CNN
+F 3 "" H 6800 1050 50  0001 C CNN
+	1    6800 1050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C405
+U 1 1 59930819
+P 7450 2850
+F 0 "C405" H 7475 2950 50  0000 L CNN
+F 1 "100n" H 7475 2750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7488 2700 50  0001 C CNN
+F 3 "" H 7450 2850 50  0001 C CNN
+	1    7450 2850
+	0    1    -1   0   
+$EndComp
+Text Label 3200 1900 2    60   ~ 0
+GND_POWER
+Wire Wire Line
+	6800 900  6800 800 
+Connection ~ 6800 800 
+Text Label 1350 7050 0    60   ~ 0
+VCC_SIGNAL
+Wire Wire Line
+	1250 7050 1950 7050
+Text Label 1350 7250 0    60   ~ 0
+VCC_POWER
+Wire Wire Line
+	1250 7250 1950 7250
+$Comp
+L Device:L L401
+U 1 1 59930B45
+P 6050 800
+F 0 "L401" V 6000 800 50  0000 C CNN
+F 1 "100u 3A" V 6125 800 50  0000 C CNN
+F 2 "flax_lib:Inductor_Coilcraft_MSS1210" H 6050 800 50  0001 C CNN
+F 3 "" H 6050 800 50  0001 C CNN
+	1    6050 800 
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:CP C404
+U 1 1 59930C9B
+P 5800 1050
+F 0 "C404" H 5825 1150 50  0000 L CNN
+F 1 "33u 35V" H 5825 950 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 5838 900 50  0001 C CNN
+F 3 "" H 5800 1050 50  0001 C CNN
+	1    5800 1050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 900  5800 800 
+Connection ~ 5800 800 
+Text HLabel 7400 3500 2    60   Input ~ 0
+OUT1
+Wire Wire Line
+	7400 3500 7100 3500
+$Comp
+L instru_bab_v2-rescue:BTN8980TA U402
+U 1 1 59A1D00E
+P 6100 3600
+F 0 "U402" H 6400 4100 60  0000 C CNN
+F 1 "BTN8980TA" H 6450 3050 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin8" H 6000 3600 60  0001 C CNN
+F 3 "" H 6000 3600 60  0000 C CNN
+	1    6100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R406
+U 1 1 59A1D37B
+P 5150 4400
+F 0 "R406" V 5230 4400 50  0000 C CNN
+F 1 "10k" V 5150 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5080 4400 50  0001 C CNN
+F 3 "" H 5150 4400 50  0001 C CNN
+	1    5150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3300 5400 3300
+Wire Wire Line
+	5150 4550 5150 4650
+$Comp
+L Device:R R408
+U 1 1 59A1D920
+P 5300 4150
+F 0 "R408" V 5380 4150 50  0000 C CNN
+F 1 "1k" V 5300 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5230 4150 50  0001 C CNN
+F 3 "" H 5300 4150 50  0001 C CNN
+	1    5300 4150
+	1    0    0    -1  
+$EndComp
+Text Label 5350 4400 0    60   ~ 0
+GND_SIGNAL
+$Comp
+L Device:C C402
+U 1 1 59A1E327
+P 4850 4400
+F 0 "C402" H 4875 4500 50  0000 L CNN
+F 1 "1n" H 4875 4300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4888 4250 50  0001 C CNN
+F 3 "" H 4850 4400 50  0001 C CNN
+	1    4850 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4550 4850 4650
+Wire Wire Line
+	4850 4250 4850 4150
+Wire Wire Line
+	4700 4150 4850 4150
+Connection ~ 5150 4150
+$Comp
+L Device:R R401
+U 1 1 59A1F818
+P 9700 4950
+F 0 "R401" V 9780 4950 50  0000 C CNN
+F 1 "10k" V 9700 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9630 4950 50  0001 C CNN
+F 3 "" H 9700 4950 50  0001 C CNN
+	1    9700 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R402
+U 1 1 59A1F99F
+P 9700 5650
+F 0 "R402" V 9780 5650 50  0000 C CNN
+F 1 "10k" V 9700 5650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9630 5650 50  0001 C CNN
+F 3 "" H 9700 5650 50  0001 C CNN
+	1    9700 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4800 9700 4700
+Wire Wire Line
+	9700 5100 9700 5300
+Connection ~ 9700 5300
+Wire Wire Line
+	9700 5800 9700 5900
+Wire Wire Line
+	9700 5900 10000 5900
+Connection ~ 10000 5900
+$Comp
+L instru_bab_v2-rescue:TL431 IC401
+U 1 1 59A1FF83
+P 10000 5300
+F 0 "IC401" H 9950 5380 50  0000 L CNN
+F 1 "TL431" H 10050 5225 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" V 10000 5300 50  0001 C CNN
+F 3 "" V 10000 5300 50  0001 C CNN
+	1    10000 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 5300 9700 5300
+$Comp
+L Device:R R404
+U 1 1 59A20CFD
+P 4100 3250
+F 0 "R404" V 4180 3250 50  0000 C CNN
+F 1 "10k" V 4100 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4030 3250 50  0001 C CNN
+F 3 "" H 4100 3250 50  0001 C CNN
+	1    4100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3400 4100 3700
+Wire Wire Line
+	4100 3100 4100 3000
+Wire Wire Line
+	4100 3000 4600 3000
+Connection ~ 4600 3000
+Wire Wire Line
+	5300 3900 5400 3900
+Wire Wire Line
+	5300 4000 5300 3900
+Wire Wire Line
+	5300 4300 5300 4400
+Wire Wire Line
+	5300 4400 5900 4400
+Connection ~ 6300 4650
+Connection ~ 5150 4650
+Wire Wire Line
+	5150 4250 5150 4150
+Wire Wire Line
+	4700 4150 4700 4500
+Connection ~ 4850 4150
+Text Label 4000 4000 2    60   ~ 0
+VCC_SIGNAL
+Wire Wire Line
+	3400 4000 4100 4000
+Wire Wire Line
+	4100 4000 4100 4100
+Text Label 4000 4800 2    60   ~ 0
+GND_SIGNAL
+Wire Wire Line
+	4100 4700 4100 4800
+Wire Wire Line
+	4100 4800 3400 4800
+Wire Wire Line
+	4700 4500 4300 4500
+Text Label 4400 4200 1    60   ~ 0
+VCC_DIG
+Wire Wire Line
+	4300 4300 4400 4300
+Wire Wire Line
+	4400 4300 4400 3800
+$Comp
+L instru_bab_v2-rescue:BAS21 D401
+U 1 1 59A233E1
+P 3450 4400
+AR Path="/59A233E1" Ref="D401"  Part="1" 
+AR Path="/5990A043/59A233E1" Ref="D401"  Part="1" 
+F 0 "D401" H 3450 4500 50  0000 C CNN
+F 1 "BAS21" H 3450 4300 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3450 4400 50  0001 C CNN
+F 3 "" H 3450 4400 50  0000 C CNN
+	1    3450 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 4400 3700 4400
+Wire Wire Line
+	4100 3800 2750 3800
+Connection ~ 4100 3700
+Text Label 2900 3800 0    60   ~ 0
+INH
+Wire Wire Line
+	3300 4400 2750 4400
+Text Label 2900 4400 0    60   ~ 0
+INH
+Text Label 4000 5100 2    60   ~ 0
+VCC_SIGNAL
+Wire Wire Line
+	3400 5100 4100 5100
+Wire Wire Line
+	4100 5100 4100 5200
+Text Label 4000 5900 2    60   ~ 0
+GND_SIGNAL
+Wire Wire Line
+	4100 5800 4100 5900
+Wire Wire Line
+	4100 5900 3400 5900
+Text Label 4400 5300 1    60   ~ 0
+VCC_DIG
+Wire Wire Line
+	4300 5400 4400 5400
+Wire Wire Line
+	4400 5400 4400 4900
+$Comp
+L instru_bab_v2-rescue:BAS21 D402
+U 1 1 59A24687
+P 3450 5500
+AR Path="/59A24687" Ref="D402"  Part="1" 
+AR Path="/5990A043/59A24687" Ref="D402"  Part="1" 
+F 0 "D402" H 3450 5600 50  0000 C CNN
+F 1 "BAS21" H 3450 5400 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3450 5500 50  0001 C CNN
+F 3 "" H 3450 5500 50  0000 C CNN
+	1    3450 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 5500 3700 5500
+Wire Wire Line
+	3300 5500 2750 5500
+Text Label 2900 5500 0    60   ~ 0
+INH
+$Comp
+L Device:R R412
+U 1 1 59A24B40
+P 6300 5450
+F 0 "R412" V 6380 5450 50  0000 C CNN
+F 1 "10m" V 6300 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_2512" V 6230 5450 50  0001 C CNN
+F 3 "" H 6300 5450 50  0001 C CNN
+	1    6300 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5600 6300 5700
+Text Label 5200 5050 2    60   ~ 0
+VCC_SIGNAL
+Text Label 5200 5850 2    60   ~ 0
+GND_SIGNAL
+Wire Wire Line
+	5300 5750 5300 5850
+Wire Wire Line
+	5300 5850 4650 5850
+Wire Wire Line
+	5300 5150 5300 5050
+Wire Wire Line
+	5300 5050 4650 5050
+$Comp
+L Device:R R410
+U 1 1 59A25786
+P 5850 5200
+F 0 "R410" V 5930 5200 50  0000 C CNN
+F 1 "1k" V 5850 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5780 5200 50  0001 C CNN
+F 3 "" H 5850 5200 50  0001 C CNN
+	1    5850 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R411
+U 1 1 59A25855
+P 5850 5700
+F 0 "R411" V 5930 5700 50  0000 C CNN
+F 1 "1k" V 5850 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5780 5700 50  0001 C CNN
+F 3 "" H 5850 5700 50  0001 C CNN
+	1    5850 5700
+	0    1    1    0   
+$EndComp
+Connection ~ 6300 5200
+Connection ~ 6300 5700
+Wire Wire Line
+	5700 5200 5600 5200
+Wire Wire Line
+	5600 5100 5600 5200
+Wire Wire Line
+	5600 5350 5500 5350
+Wire Wire Line
+	5500 5550 5600 5550
+Wire Wire Line
+	5600 5550 5600 5600
+Wire Wire Line
+	5600 5700 5700 5700
+$Comp
+L Device:C C403
+U 1 1 59A25ACC
+P 5700 5450
+F 0 "C403" H 5725 5550 50  0000 L CNN
+F 1 "10n" H 5725 5350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5738 5300 50  0001 C CNN
+F 3 "" H 5700 5450 50  0001 C CNN
+	1    5700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5600 5600 5600
+Connection ~ 5600 5600
+Wire Wire Line
+	5700 5300 5600 5300
+Connection ~ 5600 5300
+$Comp
+L Device:R R407
+U 1 1 59A25CAD
+P 5250 6050
+F 0 "R407" V 5330 6050 50  0000 C CNN
+F 1 "100k" V 5250 6050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5180 6050 50  0001 C CNN
+F 3 "" H 5250 6050 50  0001 C CNN
+	1    5250 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 6050 5400 6050
+Connection ~ 5600 5700
+Wire Wire Line
+	5100 6050 4600 6050
+Wire Wire Line
+	4600 6050 4600 5600
+Wire Wire Line
+	4600 5450 4900 5450
+Wire Wire Line
+	4300 5600 4600 5600
+Connection ~ 4600 5600
+$Comp
+L Device:R R409
+U 1 1 59A25F49
+P 5600 4950
+F 0 "R409" V 5680 4950 50  0000 C CNN
+F 1 "100k" V 5600 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5530 4950 50  0001 C CNN
+F 3 "" H 5600 4950 50  0001 C CNN
+	1    5600 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 5200
+Text Label 5550 4750 2    60   ~ 0
+GND_SIGNAL
+Wire Wire Line
+	5600 4800 5600 4750
+Wire Wire Line
+	5600 4750 5000 4750
+Wire Wire Line
+	6800 3700 6900 3700
+Wire Wire Line
+	6900 3700 6900 3500
+Connection ~ 6900 3500
+$Comp
+L instru_bab_v2-rescue:LM2902-linear U401
+U 1 1 59ADAD1C
+P 4000 4400
+F 0 "U401" H 4000 4600 50  0000 L CNN
+F 1 "LM2902" H 4000 4200 50  0000 L CNN
+F 2 "SMD_Packages:SOIC-14_N" H 3950 4500 50  0001 C CNN
+F 3 "" H 4050 4600 50  0001 C CNN
+	1    4000 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L instru_bab_v2-rescue:LM2902-linear U401
+U 2 1 59ADADB2
+P 4000 5500
+F 0 "U401" H 4000 5700 50  0000 L CNN
+F 1 "LM2902" H 4000 5300 50  0000 L CNN
+F 2 "SMD_Packages:SOIC-14_N" H 3950 5600 50  0001 C CNN
+F 3 "" H 4050 5700 50  0001 C CNN
+	2    4000 5500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L instru_bab_v2-rescue:LM2902-linear U401
+U 3 1 59ADAE2E
+P 5200 5450
+F 0 "U401" H 5200 5650 50  0000 L CNN
+F 1 "LM2902" H 5200 5250 50  0000 L CNN
+F 2 "SMD_Packages:SOIC-14_N" H 5150 5550 50  0001 C CNN
+F 3 "" H 5250 5650 50  0001 C CNN
+	3    5200 5450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C407
+U 1 1 59ADAF2F
+P 2850 5050
+F 0 "C407" H 2875 5150 50  0000 L CNN
+F 1 "100n" H 2875 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2888 4900 50  0001 C CNN
+F 3 "" H 2850 5050 50  0001 C CNN
+	1    2850 5050
+	1    0    0    -1  
+$EndComp
+Text Label 2700 4800 2    60   ~ 0
+VCC_SIGNAL
+Text Label 2700 5300 2    60   ~ 0
+GND_SIGNAL
+Wire Wire Line
+	2250 5300 2850 5300
+Wire Wire Line
+	2850 5300 2850 5200
+Wire Wire Line
+	2850 4900 2850 4800
+Wire Wire Line
+	2850 4800 2300 4800
+Text Label 6300 5700 3    60   ~ 0
+GND_POWER
+Wire Wire Line
+	6100 4250 6100 4350
+Wire Wire Line
+	6100 4550 6300 4550
+Wire Wire Line
+	6300 4550 6300 4650
+$Comp
+L instru_bab_v2-rescue:net_tie N401
+U 1 1 59BA22A7
+P 5950 4650
+F 0 "N401" H 5950 4500 60  0000 C CNN
+F 1 "net_tie" H 5950 4800 60  0000 C CNN
+F 2 "flax_lib:net_tie_0.5mm_long" H 5950 4650 60  0001 C CNN
+F 3 "" H 5950 4650 60  0000 C CNN
+	1    5950 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L instru_bab_v2-rescue:net_tie N402
+U 1 1 59BA234B
+P 6150 5200
+F 0 "N402" H 6150 5050 60  0000 C CNN
+F 1 "net_tie" H 6150 5350 60  0000 C CNN
+F 2 "flax_lib:net_tie_0.5mm_long" H 6150 5200 60  0001 C CNN
+F 3 "" H 6150 5200 60  0000 C CNN
+	1    6150 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L instru_bab_v2-rescue:net_tie N403
+U 1 1 59BA23D5
+P 6150 5700
+F 0 "N403" H 6150 5550 60  0000 C CNN
+F 1 "net_tie" H 6150 5850 60  0000 C CNN
+F 2 "flax_lib:net_tie_0.5mm_long" H 6150 5700 60  0001 C CNN
+F 3 "" H 6150 5700 60  0000 C CNN
+	1    6150 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4650 6000 4650
+Wire Wire Line
+	4850 4650 5150 4650
+Wire Wire Line
+	6100 5200 6000 5200
+Wire Wire Line
+	6200 5200 6300 5200
+Wire Wire Line
+	6200 5700 6300 5700
+Wire Wire Line
+	6100 5700 6000 5700
+Text Label 6150 4550 0    60   ~ 0
+GND_MOTOR_CURR_SENSE
+Text Label 6550 800  0    60   ~ 0
+VCC_MOTOR_FILT
+Text HLabel 2750 3800 0    60   Output ~ 0
+~INH~
+Text Notes 2400 4300 0    60   ~ 0
+High-side current limiting\n(approx. 6A)
+Text Notes 6500 5500 0    60   ~ 0
+Low-side current sensing
+Text Notes 2350 5850 0    60   ~ 0
+Low-side current limiting\n(approx. 6A)
+Text Notes 9700 6300 0    60   ~ 0
+5V reference voltage
+$Comp
+L Device:Q_PMOS_GDSD Q401
+U 1 1 5A9AE50A
+P 3800 900
+F 0 "Q401" H 4000 950 50  0000 L CNN
+F 1 "IRFR5305" H 4000 850 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-3_TabPin4" H 4000 1000 50  0001 C CNN
+F 3 "" H 3800 900 50  0001 C CNN
+	1    3800 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R413
+U 1 1 5A9AF20A
+P 4100 1550
+F 0 "R413" V 4180 1550 50  0000 C CNN
+F 1 "10k" V 4100 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4030 1550 50  0001 C CNN
+F 3 "" H 4100 1550 50  0001 C CNN
+	1    4100 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C408
+U 1 1 5A9AF7D7
+P 3400 1150
+F 0 "C408" H 3425 1250 50  0000 L CNN
+F 1 "100n" H 3425 1050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3438 1000 50  0001 C CNN
+F 3 "" H 3400 1150 50  0001 C CNN
+	1    3400 1150
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4100 1900
+Connection ~ 4100 800 
+Wire Wire Line
+	3800 1100 3800 1300
+Wire Wire Line
+	3800 1300 4100 1300
+Connection ~ 4100 1300
+Wire Wire Line
+	2600 800  3400 800 
+Wire Wire Line
+	3600 700  3500 700 
+Wire Wire Line
+	3500 700  3500 800 
+Connection ~ 3500 800 
+Wire Wire Line
+	3400 1000 3400 800 
+Connection ~ 3400 800 
+Wire Wire Line
+	3400 1300 3400 1900
+Connection ~ 3400 1900
+$Comp
+L Device:CP C410
+U 1 1 5A9B216C
+P 5300 1050
+F 0 "C410" H 5325 1150 50  0000 L CNN
+F 1 "33u 35V" H 5325 950 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 5338 900 50  0001 C CNN
+F 3 "" H 5300 1050 50  0001 C CNN
+	1    5300 1050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 800  5800 800 
+$Comp
+L Device:CP C409
+U 1 1 5A9B250B
+P 4800 1050
+F 0 "C409" H 4825 1150 50  0000 L CNN
+F 1 "33u 35V" H 4825 950 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 4838 900 50  0001 C CNN
+F 3 "" H 4800 1050 50  0001 C CNN
+	1    4800 1050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 900  4800 800 
+Connection ~ 4800 800 
+Connection ~ 5300 800 
+Connection ~ 5300 1900
+$Comp
+L Device:CP C413
+U 1 1 5A9B2EFE
+P 7300 1050
+F 0 "C413" H 7325 1150 50  0000 L CNN
+F 1 "220u 35V" H 7325 950 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x10" H 7338 900 50  0001 C CNN
+F 3 "" H 7300 1050 50  0001 C CNN
+	1    7300 1050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C414
+U 1 1 5A9B2FBE
+P 7800 1050
+F 0 "C414" H 7825 1150 50  0000 L CNN
+F 1 "220u 35V" H 7825 950 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x10" H 7838 900 50  0001 C CNN
+F 3 "" H 7800 1050 50  0001 C CNN
+	1    7800 1050
+	-1   0    0    -1  
+$EndComp
+Connection ~ 7300 800 
+Connection ~ 7300 1900
+Wire Wire Line
+	7800 900  7800 800 
+Text Notes 3150 2000 0    60   ~ 0
+Reverse polarity protection
+Text Label 7900 2850 0    60   ~ 0
+GND_POWER
+Text Label 7700 2550 0    60   ~ 0
+VCC_MOTOR_FILT
+Wire Wire Line
+	6100 2950 6100 2850
+Wire Wire Line
+	6100 2550 8450 2550
+Wire Wire Line
+	6100 2850 7100 2850
+Connection ~ 6100 2850
+$Comp
+L instru_bab_v2-rescue:BZX84 D404
+U 1 1 5A9B5B72
+P 4100 1050
+F 0 "D404" H 4100 1150 50  0000 C CNN
+F 1 "BZX84" H 4100 950 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4100 1050 50  0001 C CNN
+F 3 "" H 4100 1050 50  0000 C CNN
+	1    4100 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 1200 4100 1300
+Wire Wire Line
+	4100 900  4100 800 
+Wire Wire Line
+	5300 900  5300 800 
+Wire Wire Line
+	7300 900  7300 800 
+$Comp
+L Device:R R414
+U 1 1 5A9B6571
+P 5300 1650
+F 0 "R414" V 5380 1650 50  0000 C CNN
+F 1 "1" V 5300 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5230 1650 50  0001 C CNN
+F 3 "" H 5300 1650 50  0001 C CNN
+	1    5300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R416
+U 1 1 5A9B6637
+P 7300 1650
+F 0 "R416" V 7380 1650 50  0000 C CNN
+F 1 "1" V 7300 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_2512" V 7230 1650 50  0001 C CNN
+F 3 "" H 7300 1650 50  0001 C CNN
+	1    7300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1800 5300 1900
+Wire Wire Line
+	5300 1500 5300 1300
+Wire Wire Line
+	4800 1200 4800 1300
+Wire Wire Line
+	4800 1300 5300 1300
+Connection ~ 5300 1300
+Wire Wire Line
+	5800 1300 5800 1200
+Wire Wire Line
+	6800 1200 6800 1300
+Wire Wire Line
+	6800 1300 7300 1300
+Wire Wire Line
+	7300 1200 7300 1300
+Connection ~ 7300 1300
+Wire Wire Line
+	7800 1200 7800 1300
+Wire Wire Line
+	7300 1800 7300 1900
+Text Label 5000 1300 0    60   ~ 0
+C_COM_PWR_1
+Text Label 7000 1300 0    60   ~ 0
+C_COM_PWR_2
+$Comp
+L Device:R R415
+U 1 1 5A9BA453
+P 6800 1650
+F 0 "R415" V 6880 1650 50  0000 C CNN
+F 1 "1" V 6800 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_2512" V 6730 1650 50  0001 C CNN
+F 3 "" H 6800 1650 50  0001 C CNN
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R417
+U 1 1 5A9BA51B
+P 7800 1650
+F 0 "R417" V 7880 1650 50  0000 C CNN
+F 1 "1" V 7800 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_2512" V 7730 1650 50  0001 C CNN
+F 3 "" H 7800 1650 50  0001 C CNN
+	1    7800 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7800 1300
+Connection ~ 6800 1300
+Wire Wire Line
+	6800 1800 6800 1900
+Connection ~ 6800 1900
+Wire Wire Line
+	7800 1800 7800 1900
+Wire Wire Line
+	6200 800  6800 800 
+Wire Wire Line
+	7800 1900 7300 1900
+$Comp
+L Device:CP C415
+U 1 1 5A9BF304
+P 8300 1050
+F 0 "C415" H 8325 1150 50  0000 L CNN
+F 1 "220u 35V" H 8325 950 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x10" H 8338 900 50  0001 C CNN
+F 3 "" H 8300 1050 50  0001 C CNN
+	1    8300 1050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 800  8300 900 
+Connection ~ 7800 800 
+Wire Wire Line
+	8300 1300 8300 1200
+$Comp
+L Device:C C412
+U 1 1 5A9C108F
+P 7100 3750
+F 0 "C412" H 7125 3850 50  0000 L CNN
+F 1 "220n" H 7125 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7138 3600 50  0001 C CNN
+F 3 "" H 7100 3750 50  0001 C CNN
+	1    7100 3750
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C411
+U 1 1 5A9C1172
+P 7100 3250
+F 0 "C411" H 7125 3350 50  0000 L CNN
+F 1 "220n" H 7125 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7138 3100 50  0001 C CNN
+F 3 "" H 7100 3250 50  0001 C CNN
+	1    7100 3250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7100 3400 7100 3500
+Connection ~ 7100 3500
+Wire Wire Line
+	6100 4350 7100 4350
+Wire Wire Line
+	7100 4350 7100 3900
+Connection ~ 6100 4350
+Wire Wire Line
+	7100 3100 7100 2850
+Connection ~ 7100 2850
+Text Notes 8450 1100 0    60   ~ 0
+Min 800mA ripple current
+$Comp
+L Device:R R418
+U 1 1 5AC2A023
+P 4900 3500
+F 0 "R418" V 4980 3500 50  0000 C CNN
+F 1 "10k" V 4900 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4830 3500 50  0001 C CNN
+F 3 "" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3500 5400 3500
+Wire Wire Line
+	4750 3500 4600 3500
+$Comp
+L Device:R R419
+U 1 1 5AC2A4C4
+P 4900 3700
+F 0 "R419" V 4980 3700 50  0000 C CNN
+F 1 "10k" V 4900 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4830 3700 50  0001 C CNN
+F 3 "" H 4900 3700 50  0001 C CNN
+	1    4900 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3700 5400 3700
+Wire Wire Line
+	4750 3700 4100 3700
+Wire Wire Line
+	4100 1900 4100 1700
+$Comp
+L instru_bab_v2-rescue:net_tie N404
+U 1 1 5AD3B136
+P 7750 2850
+F 0 "N404" H 7750 2700 60  0000 C CNN
+F 1 "net_tie" H 7750 3000 60  0000 C CNN
+F 2 "flax_lib:net_tie_0.5mm_long" H 7750 2850 60  0001 C CNN
+F 3 "" H 7750 2850 60  0000 C CNN
+	1    7750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2850 7600 2850
+Wire Wire Line
+	7800 2850 8450 2850
+Wire Wire Line
+	4600 3500 3900 3500
+Wire Wire Line
+	10000 4700 10000 5200
+Wire Wire Line
+	10000 4700 10400 4700
+Wire Wire Line
+	10400 4700 11000 4700
+Wire Wire Line
+	6800 800  7300 800 
+Wire Wire Line
+	5800 800  5300 800 
+Wire Wire Line
+	5150 4150 5150 3300
+Wire Wire Line
+	9700 5300 9700 5500
+Wire Wire Line
+	10000 5900 10000 6100
+Wire Wire Line
+	4600 3000 4600 3100
+Wire Wire Line
+	6300 4650 6300 5200
+Wire Wire Line
+	5150 4650 5900 4650
+Wire Wire Line
+	4850 4150 5150 4150
+Wire Wire Line
+	4100 3700 4100 3800
+Wire Wire Line
+	6300 5200 6300 5300
+Wire Wire Line
+	6300 5700 6300 6250
+Wire Wire Line
+	5600 5600 5600 5700
+Wire Wire Line
+	5600 5300 5600 5350
+Wire Wire Line
+	5600 5700 5600 6050
+Wire Wire Line
+	4600 5600 4600 5450
+Wire Wire Line
+	5600 5200 5600 5300
+Wire Wire Line
+	6900 3500 6800 3500
+Wire Wire Line
+	4100 1900 3400 1900
+Wire Wire Line
+	4100 800  4000 800 
+Wire Wire Line
+	4100 1300 4100 1400
+Wire Wire Line
+	3500 800  3600 800 
+Wire Wire Line
+	3400 800  3500 800 
+Wire Wire Line
+	3400 1900 2600 1900
+Wire Wire Line
+	4800 800  4100 800 
+Wire Wire Line
+	5300 800  4800 800 
+Wire Wire Line
+	5300 1900 4100 1900
+Wire Wire Line
+	7300 800  7800 800 
+Wire Wire Line
+	7300 1900 6800 1900
+Wire Wire Line
+	6100 2850 6100 2550
+Wire Wire Line
+	5300 1300 5300 1200
+Wire Wire Line
+	5300 1300 5800 1300
+Wire Wire Line
+	7300 1300 7800 1300
+Wire Wire Line
+	7300 1300 7300 1500
+Wire Wire Line
+	7800 1300 7800 1500
+Wire Wire Line
+	7800 1300 8300 1300
+Wire Wire Line
+	6800 1300 6800 1500
+Wire Wire Line
+	6800 1900 5300 1900
+Wire Wire Line
+	7800 800  8300 800 
+Wire Wire Line
+	7100 3500 6900 3500
+Wire Wire Line
+	7100 3500 7100 3600
+Wire Wire Line
+	6100 4350 6100 4550
+Wire Wire Line
+	7100 2850 7300 2850
+$EndSCHEMATC
